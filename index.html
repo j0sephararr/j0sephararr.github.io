@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameZone | Noticias y Reseñas Gamer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0f172a;
+      --secondary-color: #1e293b;
+      --accent-color: #22d3ee;
+      --text-color: #e2e8f0;
+      --hover-color: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--secondary-color);
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent-color);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      color: var(--accent-color);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    nav {
+      background-color: #0f172a;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--hover-color);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--hover-color);
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: var(--secondary-color);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      color: var(--hover-color);
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: var(--accent-color);
+      color: #0f172a;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--hover-color);
+    }
+
+    footer {
+      background-color: #1e293b;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 1px solid #334155;
+    }
+
+    footer p {
+      color: #94a3b8;
+    }
+
+    .social a {
+      margin: 0 12px;
+      color: var(--accent-color);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      color: var(--hover-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GameZone</h1>
+    <p>Noticias, Reseñas y Estrenos para Gamers de Verdad</p>
+  </header>
+
+  <nav>
+    <a href="#noticias">Noticias</a>
+    <a href="#reseñas">Reseñas</a>
+    <a href="#lanzamientos">Lanzamientos</a>
+  </nav>
+
+  <div class="hero">
+    <h2>¡Bienvenido a la Zona Gamer!</h2>
+  </div>
+
+  <div class="container">
+    <section id="noticias">
+      <h2>Últimas Noticias</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=PlayStation+6+Filtrada" alt="PS6">
+          <div class="card-content">
+            <h3>¿PlayStation 6 en camino?</h3>
+            <p>Se filtran detalles sobre la nueva generación de consolas de Sony. Rumores indican soporte nativo para VR 2.0.</p>
+            <a href="#" class="btn">Leer más</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=E-Sports" alt="E-Sports">
+          <div class="card-content">
+            <h3>LATAM domina el mundial de Valorant</h3>
+            <p>El equipo mexicano "FireDragons" logra su primer título internacional con jugadas impresionantes.</p>
+            <a href="#" class="btn">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reseñas">
+      <h2>Reseñas Destacadas</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Reseña+Elden+Ring" alt="Elden Ring">
+          <div class="card-content">
+            <h3>Elden Ring: DLC Shadow of the Erdtree</h3>
+            <p>Una expansión oscura y magistral. Nuevas armas, jefes y zonas para los más valientes. Calificación: 9.8/10</p>
+            <a href="#" class="btn">Ver reseña</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Reseña+FIFA+26" alt="FIFA">
+          <div class="card-content">
+            <h3>FIFA 26: ¿La mejor entrega?</h3>
+            <p>Gráficos mejorados y jugabilidad fluida, pero aún con microtransacciones. ¿Vale la pena?</p>
+            <a href="#" class="btn">Ver reseña</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lanzamientos">
+      <h2>Próximos Lanzamientos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Cyberpunk+2" alt="Cyberpunk">
+          <div class="card-content">
+            <h3>Cyberpunk 2078</h3>
+            <p>CD Projekt RED revela la secuela con un mundo más inmersivo, IA mejorada y multijugador cooperativo.</p>
+            <a href="#" class="btn">Detalles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 GameZone. Página realizada por estudiantes de preparatoria con pasión por los videojuegos.</p>
+    <div class="social">
+      <a href="#">YouTube</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitch</a>
+    </div>
+  </footer>
+
+</body>
+</html>
